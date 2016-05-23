@@ -18,22 +18,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="libros.jpeg" translatesAutoresizingMaskIntoConstraints="NO" id="EJ4-em-J4i">
-                                <rect key="frame" x="40" y="87" width="240" height="128"/>
-                            </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="ISBN" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="M8w-ha-oe6">
-                                <rect key="frame" x="141" y="273" width="38" height="21"/>
+                                <rect key="frame" x="141" y="110" width="38" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" verticalCompressionResistancePriority="740" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ZHo-f6-1Ln">
-                                <rect key="frame" x="60" y="310" width="200" height="29"/>
+                                <rect key="frame" x="60" y="147" width="200" height="29"/>
                                 <accessibility key="accessibilityConfiguration">
                                     <accessibilityTraits key="traits" keyboardKey="YES"/>
                                 </accessibility>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="29" id="h3C-kP-Mfl"/>
+                                    <constraint firstAttribute="height" constant="29" id="Rxf-Mh-3A8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits" keyboardType="webSearch"/>
@@ -42,14 +39,14 @@
                                 </connections>
                             </textField>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="U9X-Pv-Spe">
-                                <rect key="frame" x="60" y="381" width="43" height="30"/>
+                                <rect key="frame" x="60" y="218" width="43" height="30"/>
                                 <state key="normal" title="Borrar"/>
                                 <connections>
                                     <action selector="clearISBN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="yek-4b-cgL"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGU-9t-nUx">
-                                <rect key="frame" x="212" y="382" width="48" height="29"/>
+                                <rect key="frame" x="212" y="219" width="48" height="29"/>
                                 <state key="normal" title="Buscar"/>
                                 <connections>
                                     <action selector="BuscarISBN:" destination="BYZ-38-t0r" eventType="touchUpInside" id="HgY-Z4-BvK"/>
@@ -62,21 +59,17 @@
                             <bool key="isElement" value="YES"/>
                         </accessibility>
                         <constraints>
-                            <constraint firstItem="ZHo-f6-1Ln" firstAttribute="leading" secondItem="U9X-Pv-Spe" secondAttribute="leading" id="1rG-Bj-6Fv"/>
-                            <constraint firstItem="U9X-Pv-Spe" firstAttribute="top" secondItem="ZHo-f6-1Ln" secondAttribute="bottom" constant="42" id="3qp-nf-W8b"/>
-                            <constraint firstItem="e25-fA-XqM" firstAttribute="top" secondItem="U9X-Pv-Spe" secondAttribute="bottom" constant="157" id="4pD-oG-nRK"/>
-                            <constraint firstItem="EJ4-em-J4i" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="24" id="6Nb-Yt-W5I"/>
-                            <constraint firstItem="ZHo-f6-1Ln" firstAttribute="top" secondItem="M8w-ha-oe6" secondAttribute="bottom" constant="16" id="7Sg-gZ-zO1"/>
-                            <constraint firstItem="M8w-ha-oe6" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="CzM-mb-0ab"/>
-                            <constraint firstItem="U9X-Pv-Spe" firstAttribute="bottom" secondItem="tGU-9t-nUx" secondAttribute="bottom" id="Lup-xA-2fB"/>
-                            <constraint firstItem="EJ4-em-J4i" firstAttribute="top" secondItem="ksZ-az-Ek5" secondAttribute="bottom" constant="23" id="O5j-4Z-Xyy"/>
-                            <constraint firstItem="tGU-9t-nUx" firstAttribute="leading" secondItem="U9X-Pv-Spe" secondAttribute="trailing" constant="109" id="XlM-dw-ed6"/>
-                            <constraint firstItem="EJ4-em-J4i" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="cpN-ca-ofm"/>
-                            <constraint firstItem="M8w-ha-oe6" firstAttribute="centerX" secondItem="ZHo-f6-1Ln" secondAttribute="centerX" id="ebV-bA-eB3"/>
-                            <constraint firstItem="EJ4-em-J4i" firstAttribute="centerX" secondItem="M8w-ha-oe6" secondAttribute="centerX" id="heW-6O-RPQ"/>
-                            <constraint firstItem="ZHo-f6-1Ln" firstAttribute="trailing" secondItem="tGU-9t-nUx" secondAttribute="trailing" id="iPt-LJ-WAW"/>
-                            <constraint firstItem="U9X-Pv-Spe" firstAttribute="centerY" secondItem="tGU-9t-nUx" secondAttribute="centerY" id="nUB-6B-Svn"/>
-                            <constraint firstItem="M8w-ha-oe6" firstAttribute="top" secondItem="EJ4-em-J4i" secondAttribute="bottom" constant="58" id="nsy-hJ-8Nm"/>
+                            <constraint firstItem="M8w-ha-oe6" firstAttribute="centerX" secondItem="ZHo-f6-1Ln" secondAttribute="centerX" id="7uj-58-B26"/>
+                            <constraint firstItem="M8w-ha-oe6" firstAttribute="top" secondItem="ksZ-az-Ek5" secondAttribute="bottom" constant="46" id="9q0-rY-9VE"/>
+                            <constraint firstItem="ZHo-f6-1Ln" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="44" id="DAX-Jd-NSR"/>
+                            <constraint firstItem="e25-fA-XqM" firstAttribute="top" secondItem="U9X-Pv-Spe" secondAttribute="bottom" constant="320" id="Db4-d4-SBx"/>
+                            <constraint firstItem="ZHo-f6-1Ln" firstAttribute="trailing" secondItem="tGU-9t-nUx" secondAttribute="trailing" id="Hh9-X6-gaB"/>
+                            <constraint firstItem="ZHo-f6-1Ln" firstAttribute="leading" secondItem="U9X-Pv-Spe" secondAttribute="leading" id="Jht-QU-Z2Q"/>
+                            <constraint firstItem="U9X-Pv-Spe" firstAttribute="top" secondItem="ZHo-f6-1Ln" secondAttribute="bottom" constant="42" id="Qbq-XX-8HI"/>
+                            <constraint firstItem="U9X-Pv-Spe" firstAttribute="bottom" secondItem="tGU-9t-nUx" secondAttribute="bottom" id="Vzk-bi-Qol"/>
+                            <constraint firstItem="ZHo-f6-1Ln" firstAttribute="top" secondItem="M8w-ha-oe6" secondAttribute="bottom" constant="16" id="nPX-8i-onm"/>
+                            <constraint firstItem="U9X-Pv-Spe" firstAttribute="centerY" secondItem="tGU-9t-nUx" secondAttribute="centerY" id="oDE-O0-W7u"/>
+                            <constraint firstItem="M8w-ha-oe6" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="t7N-vy-RDF"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Xhr-jH-0Ir"/>
@@ -152,7 +145,4 @@
             <point key="canvasLocation" x="301" y="452.99999999999994"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="libros.jpeg" width="204" height="204"/>
-    </resources>
 </document>
