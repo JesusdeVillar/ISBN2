@@ -30,6 +30,23 @@ class ViewController: UIViewController,UITextFieldDelegate {
     }
 
     @IBAction func BuscarISBN(sender: AnyObject) {
+        buscarPublicacion()
+    }
+    
+    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
+        let resultado = detallesISBN
+        let sigVista=segue.destinationViewController as! ResultadoController
+        sigVista.detalleIBSN = resultado
+    }
+    
+    func textFieldShouldReturn(textField: UITextField) -> Bool {
+        if textField == self.isbn.text {
+            buscarPublicacion()
+        }
+        return true
+    }
+    
+    func buscarPublicacion(){
         if (!((isbn.text?.isEmpty)!)){
             let urls = "https://openlibrary.org/api/books?jscmd=data&format=json&bibkeys=ISBN:\(self.isbn.text!)"
             let url = NSURL(string: urls)
@@ -55,10 +72,9 @@ class ViewController: UIViewController,UITextFieldDelegate {
         }
     }
     
-    override func prepareForSegue(segue: UIStoryboardSegue, sender: AnyObject?) {
-        let resultado = detallesISBN
-        let sigVista=segue.destinationViewController as! ResultadoController
-        sigVista.detalleIBSN = resultado
+    @IBAction func textFieldDoneEditing(sender:UITextField){
+        sender.resignFirstResponder() //desaparece el teclado
     }
+    
 }
 

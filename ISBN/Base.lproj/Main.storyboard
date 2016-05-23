@@ -33,7 +33,7 @@
                                     <constraint firstAttribute="height" constant="29" id="Rxf-Mh-3A8"/>
                                 </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" keyboardType="webSearch"/>
+                                <textInputTraits key="textInputTraits" autocorrectionType="no" keyboardType="namePhonePad" returnKeyType="search" enablesReturnKeyAutomatically="YES"/>
                                 <connections>
                                     <action selector="textFieldDoneEditing:" destination="BYZ-38-t0r" eventType="editingDidEndOnExit" id="o9D-aR-f2f"/>
                                 </connections>
