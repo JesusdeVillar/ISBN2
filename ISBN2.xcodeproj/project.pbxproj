@@ -42,7 +42,7 @@
 		112D532E1CF0F1DB00AB5468 = {
 			isa = PBXGroup;
 			children = (
-				112D53391CF0F1DB00AB5468 /* ISBN */,
+				112D53391CF0F1DB00AB5468 /* ISBN2 */,
 				112D53381CF0F1DB00AB5468 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -55,7 +55,7 @@
 			name = Products;
 			sourceTree = "<group>";
 		};
-		112D53391CF0F1DB00AB5468 /* ISBN */ = {
+		112D53391CF0F1DB00AB5468 /* ISBN2 */ = {
 			isa = PBXGroup;
 			children = (
 				112D534C1CF0F40E00AB5468 /* libros.jpeg */,
@@ -67,6 +67,7 @@
 				112D53461CF0F1DB00AB5468 /* Info.plist */,
 				112D534E1CF0F46D00AB5468 /* File.swift */,
 			);
+			name = ISBN2;
 			path = ISBN;
 			sourceTree = "<group>";
 		};
