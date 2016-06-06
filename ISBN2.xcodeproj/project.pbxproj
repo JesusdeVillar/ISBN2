@@ -17,7 +17,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		112D53371CF0F1DB00AB5468 /* ISBN.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISBN.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		112D53371CF0F1DB00AB5468 /* ISBN2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ISBN2.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		112D533A1CF0F1DB00AB5468 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		112D533C1CF0F1DB00AB5468 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		112D533F1CF0F1DB00AB5468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -50,7 +50,7 @@
 		112D53381CF0F1DB00AB5468 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				112D53371CF0F1DB00AB5468 /* ISBN.app */,
+				112D53371CF0F1DB00AB5468 /* ISBN2.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -73,9 +73,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		112D53361CF0F1DB00AB5468 /* ISBN */ = {
+		112D53361CF0F1DB00AB5468 /* ISBN2 */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 112D53491CF0F1DB00AB5468 /* Build configuration list for PBXNativeTarget "ISBN" */;
+			buildConfigurationList = 112D53491CF0F1DB00AB5468 /* Build configuration list for PBXNativeTarget "ISBN2" */;
 			buildPhases = (
 				112D53331CF0F1DB00AB5468 /* Sources */,
 				112D53341CF0F1DB00AB5468 /* Frameworks */,
@@ -85,9 +85,9 @@
 			);
 			dependencies = (
 			);
-			name = ISBN;
+			name = ISBN2;
 			productName = ISBN;
-			productReference = 112D53371CF0F1DB00AB5468 /* ISBN.app */;
+			productReference = 112D53371CF0F1DB00AB5468 /* ISBN2.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -105,7 +105,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 112D53321CF0F1DB00AB5468 /* Build configuration list for PBXProject "ISBN" */;
+			buildConfigurationList = 112D53321CF0F1DB00AB5468 /* Build configuration list for PBXProject "ISBN2" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -118,7 +118,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				112D53361CF0F1DB00AB5468 /* ISBN */,
+				112D53361CF0F1DB00AB5468 /* ISBN2 */,
 			);
 		};
 /* End PBXProject section */
@@ -263,7 +263,7 @@
 				INFOPLIST_FILE = ISBN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.Jdevillar.ISBN2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ISBN2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -276,7 +276,7 @@
 				INFOPLIST_FILE = ISBN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = es.Jdevillar.ISBN2;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = ISBN2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
@@ -284,7 +284,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		112D53321CF0F1DB00AB5468 /* Build configuration list for PBXProject "ISBN" */ = {
+		112D53321CF0F1DB00AB5468 /* Build configuration list for PBXProject "ISBN2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				112D53471CF0F1DB00AB5468 /* Debug */,
@@ -293,7 +293,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		112D53491CF0F1DB00AB5468 /* Build configuration list for PBXNativeTarget "ISBN" */ = {
+		112D53491CF0F1DB00AB5468 /* Build configuration list for PBXNativeTarget "ISBN2" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				112D534A1CF0F1DB00AB5468 /* Debug */,
