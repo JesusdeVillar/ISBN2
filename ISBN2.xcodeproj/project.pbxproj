@@ -12,8 +12,6 @@
 		112D53401CF0F1DB00AB5468 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112D533E1CF0F1DB00AB5468 /* Main.storyboard */; };
 		112D53421CF0F1DB00AB5468 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 112D53411CF0F1DB00AB5468 /* Assets.xcassets */; };
 		112D53451CF0F1DB00AB5468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112D53431CF0F1DB00AB5468 /* LaunchScreen.storyboard */; };
-		112D534D1CF0F40E00AB5468 /* libros.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 112D534C1CF0F40E00AB5468 /* libros.jpeg */; };
-		112D534F1CF0F46D00AB5468 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D534E1CF0F46D00AB5468 /* File.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,8 +22,6 @@
 		112D53411CF0F1DB00AB5468 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		112D53441CF0F1DB00AB5468 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		112D53461CF0F1DB00AB5468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		112D534C1CF0F40E00AB5468 /* libros.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = libros.jpeg; sourceTree = "<group>"; };
-		112D534E1CF0F46D00AB5468 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,14 +54,12 @@
 		112D53391CF0F1DB00AB5468 /* ISBN2 */ = {
 			isa = PBXGroup;
 			children = (
-				112D534C1CF0F40E00AB5468 /* libros.jpeg */,
 				112D533A1CF0F1DB00AB5468 /* AppDelegate.swift */,
 				112D533C1CF0F1DB00AB5468 /* ViewController.swift */,
 				112D533E1CF0F1DB00AB5468 /* Main.storyboard */,
 				112D53411CF0F1DB00AB5468 /* Assets.xcassets */,
 				112D53431CF0F1DB00AB5468 /* LaunchScreen.storyboard */,
 				112D53461CF0F1DB00AB5468 /* Info.plist */,
-				112D534E1CF0F46D00AB5468 /* File.swift */,
 			);
 			name = ISBN2;
 			path = ISBN;
@@ -131,7 +125,6 @@
 			files = (
 				112D53451CF0F1DB00AB5468 /* LaunchScreen.storyboard in Resources */,
 				112D53421CF0F1DB00AB5468 /* Assets.xcassets in Resources */,
-				112D534D1CF0F40E00AB5468 /* libros.jpeg in Resources */,
 				112D53401CF0F1DB00AB5468 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -144,7 +137,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				112D533D1CF0F1DB00AB5468 /* ViewController.swift in Sources */,
-				112D534F1CF0F46D00AB5468 /* File.swift in Sources */,
 				112D533B1CF0F1DB00AB5468 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
