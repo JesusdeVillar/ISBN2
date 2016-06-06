@@ -14,7 +14,6 @@
 		112D53451CF0F1DB00AB5468 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 112D53431CF0F1DB00AB5468 /* LaunchScreen.storyboard */; };
 		112D534D1CF0F40E00AB5468 /* libros.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 112D534C1CF0F40E00AB5468 /* libros.jpeg */; };
 		112D534F1CF0F46D00AB5468 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D534E1CF0F46D00AB5468 /* File.swift */; };
-		112D53511CF0F4A400AB5468 /* ResultadoController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 112D53501CF0F4A400AB5468 /* ResultadoController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,7 +26,6 @@
 		112D53461CF0F1DB00AB5468 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		112D534C1CF0F40E00AB5468 /* libros.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = libros.jpeg; sourceTree = "<group>"; };
 		112D534E1CF0F46D00AB5468 /* File.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
-		112D53501CF0F4A400AB5468 /* ResultadoController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResultadoController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +66,6 @@
 				112D53431CF0F1DB00AB5468 /* LaunchScreen.storyboard */,
 				112D53461CF0F1DB00AB5468 /* Info.plist */,
 				112D534E1CF0F46D00AB5468 /* File.swift */,
-				112D53501CF0F4A400AB5468 /* ResultadoController.swift */,
 			);
 			path = ISBN;
 			sourceTree = "<group>";
@@ -148,7 +145,6 @@
 				112D533D1CF0F1DB00AB5468 /* ViewController.swift in Sources */,
 				112D534F1CF0F46D00AB5468 /* File.swift in Sources */,
 				112D533B1CF0F1DB00AB5468 /* AppDelegate.swift in Sources */,
-				112D53511CF0F4A400AB5468 /* ResultadoController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -266,7 +262,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ISBN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = es.Jdevillar.ISBN;
+				PRODUCT_BUNDLE_IDENTIFIER = es.Jdevillar.ISBN2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -279,7 +275,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = ISBN/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = es.Jdevillar.ISBN;
+				PRODUCT_BUNDLE_IDENTIFIER = es.Jdevillar.ISBN2;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -304,6 +300,7 @@
 				112D534B1CF0F1DB00AB5468 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
