@@ -63,12 +63,11 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate 
             let bloque = {
                 (datos: NSData?, resp: NSURLResponse?, error: NSError?) -> Void in
                 if error != nil {
-                /* se ha producido un error, lanzamos una alerta*/
                     self.stopActiviy()
+                /* se ha producido un error, lanzamos una alerta*/
                     let alert = UIAlertController(title: "Error", message: error?.localizedDescription, preferredStyle: UIAlertControllerStyle.Alert)
                     alert.addAction(UIAlertAction(title: "Ok", style: .Default, handler: { (action: UIAlertAction!) in print("Handle Ok logic")}))
                     self.presentViewController(alert, animated: true, completion: nil)
-                    
                 } else {
                     dispatch_sync(dispatch_get_main_queue()) {
                         //self.textView.text = texto as! String
@@ -78,7 +77,6 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate 
                             self.labelAutores.hidden = false
                         }
                         self.stopActiviy()
-                        
                     }
                 }
             }
