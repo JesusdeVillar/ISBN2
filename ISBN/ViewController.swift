@@ -45,7 +45,7 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate 
         self.autores.text?.removeAll()
         self.titulo.text = nil
         self.imagenView.image = nil
-        
+        self.titulo.textColor = UIColor.blueColor()
         labelTitulo.hidden = true
         labelAutores.hidden = true
     }
@@ -73,10 +73,12 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate 
                     dispatch_sync(dispatch_get_main_queue()) {
                         //self.textView.text = texto as! String
                         let datos = NSData(contentsOfURL: url!)
-                        self.muestraDatos(datos!)
+                        if self.muestraDatos(datos!) {
+                            self.labelTitulo.hidden = false
+                            self.labelAutores.hidden = false
+                        }
                         self.stopActiviy()
-                        self.labelTitulo.hidden = false
-                        self.labelAutores.hidden = false
+                        
                     }
                 }
             }
@@ -112,37 +114,45 @@ class ViewController: UIViewController, UITextViewDelegate, UITextFieldDelegate 
         self.activityIndicator.stopAnimating()
     }
     
-    func muestraDatos(datos : NSData){
+    func muestraDatos(datos : NSData) -> Bool {
+        var ret : Bool = false
         do {
             self.autores.text?.removeAll()
             let json = try NSJSONSerialization.JSONObjectWithData(datos, options: NSJSONReadingOptions.MutableLeaves)
             let dico1 = json as! NSDictionary
-            let isbn = "ISBN:\(self.isbn.text!)"
-            let dico2 = dico1[isbn] as! NSDictionary
-            self.titulo.text = dico2["title"] as! NSString as String
-            if let authors = dico2["authors"] as? [[String: AnyObject]] {
-                for author in authors {
-                    if let autor = author["name"] as? String{
-                       //names.append(autor)
-                        if ((self.autores.text?.isEmpty) != nil){
-                            self.autores.text! = autor as String
-                        } else {
-                            self.autores.text = "\(self.autores.text), \(autor)"
+            if dico1.count == 0 {
+                self.titulo.text = "no se ha encontrado la publicación"
+                self.titulo.textColor = UIColor.blackColor()
+                
+            } else {
+                let isbn = "ISBN:\(self.isbn.text!)"
+                let dico2 = dico1[isbn] as! NSDictionary
+                self.titulo.text = dico2["title"] as! NSString as String
+                if let authors = dico2["authors"] as? [[String: AnyObject]] {
+                    for author in authors {
+                        if let autor = author["name"] as? String{
+                            //names.append(autor)
+                            if ((self.autores.text?.isEmpty) != nil){
+                                self.autores.text! = autor as String
+                            } else {
+                                self.autores.text = "\(self.autores.text), \(autor)"
+                            }
                         }
                     }
                 }
-            }
             
-            if let cover = dico2["cover"] as? NSDictionary {
-                let urlCover = cover["medium"] as! NSString as String
-                let url2 = NSURL(string: urlCover)
-                let data:NSData = NSData(contentsOfURL: url2!)!
-                imagenView.image = UIImage(data: data)
+                if let cover = dico2["cover"] as? NSDictionary {
+                    let urlCover = cover["medium"] as! NSString as String
+                    let url2 = NSURL(string: urlCover)
+                    let data:NSData = NSData(contentsOfURL: url2!)!
+                    imagenView.image = UIImage(data: data)
+                }
+                ret = true
             }
-            
         } catch _ {
             print("error ")
         }
+        return ret
     }
 }
 
